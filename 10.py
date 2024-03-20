@@ -9,7 +9,7 @@ def something(word):
 
 if __name__ == "__main__":
     print("source process Id :", os.getpid())
-    t = threading.Thread(target=something, args=("happy",))
+    t = threading.Thread(target=something, args=("happyp",))
     t.daemon = True
     t.start()
     print(" Start loop in main thread ")
